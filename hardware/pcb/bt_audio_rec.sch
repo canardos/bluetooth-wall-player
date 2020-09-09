@@ -439,7 +439,7 @@ L Device:C C12
 U 1 1 5ED5E36F
 P 10500 7700
 F 0 "C12" H 10615 7746 50  0000 L CNN
-F 1 "2.2uF" H 10615 7655 50  0000 L CNN
+F 1 "4.7uF" H 10615 7655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10538 7550 50  0001 C CNN
 F 3 "~" H 10500 7700 50  0001 C CNN
 	1    10500 7700
@@ -1428,7 +1428,7 @@ PROX_I2C_SDA
 Text GLabel 10800 6550 2    39   Input ~ 0
 PROX_I2C_SCK
 Text Notes 3000 7850 0    50   ~ 0
-RdsOn(3.3Vgs) = 0.18R@125degC\ndissipation@500mA = 0.18 * 0.5 * 0.5 = 16mW\n
+RdsOn(3.3Vgs) = 0.18R@125degC\ndissipation@500mA = 0.18 * 0.5 * 0.5 = 45mW\n
 Wire Wire Line
 	12900 3350 13050 3350
 Wire Wire Line
