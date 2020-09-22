@@ -286,14 +286,14 @@ SPI_CS
 Text GLabel 5600 2350 0    39   Input ~ 0
 GPIO_OUT_DISP_CMD
 $Comp
-L Connector:Conn_01x02_Male J3
+L Connector:Conn_01x03_Male J3
 U 1 1 5EB3C69A
-P 2550 5000
-F 0 "J3" H 2800 5250 50  0000 C CNN
-F 1 "RN52 factory reset" H 2800 5150 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 2550 5000 50  0001 C CNN
-F 3 "~" H 2550 5000 50  0001 C CNN
-	1    2550 5000
+P 2550 5100
+F 0 "J3" H 2800 5450 50  0000 C CNN
+F 1 "RN52 factory reset" H 2800 5350 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 2550 5100 50  0001 C CNN
+F 3 "~" H 2550 5100 50  0001 C CNN
+	1    2550 5100
 	1    0    0    -1  
 $EndComp
 Text GLabel 2900 5100 2    39   Input ~ 0
@@ -302,28 +302,6 @@ Text GLabel 2900 5000 2    39   Input ~ 0
 3.3V
 Text GLabel 1500 1300 0    39   Input ~ 0
 RN52_EVENT
-$Comp
-L power:GND #PWR0109
-U 1 1 5EB44A53
-P 2800 5550
-F 0 "#PWR0109" H 2800 5300 50  0001 C CNN
-F 1 "GND" H 2805 5377 50  0000 C CNN
-F 2 "" H 2800 5550 50  0001 C CNN
-F 3 "" H 2800 5550 50  0001 C CNN
-	1    2800 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R9
-U 1 1 5EB460F9
-P 2800 5350
-F 0 "R9" H 2870 5396 50  0000 L CNN
-F 1 "10k" H 2870 5305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 5350 50  0001 C CNN
-F 3 "~" H 2800 5350 50  0001 C CNN
-	1    2800 5350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2750 5000 2900 5000
 $Comp
@@ -405,12 +383,12 @@ $Comp
 L Transistor_FET:DMG2301L Q4
 U 1 1 5ED5A120
 P 10000 7950
-F 0 "Q4" H 9800 7850 50  0000 L CNN
-F 1 "DMG2301L" H 9650 7750 50  0000 L CNN
+F 0 "Q4" H 9800 8050 50  0000 L CNN
+F 1 "DMG2301L" H 9650 8150 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 10200 7875 50  0001 L CIN
 F 3 "https://www.diodes.com/assets/Datasheets/DMG2301L.pdf" H 10000 7950 50  0001 L CNN
 	1    10000 7950
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:R R13
@@ -695,7 +673,7 @@ Vpp = 7 -> 14V
 Text Notes 14550 5650 0    50   ~ 0
 256x64 4-bit Display\nSH1122\n- 8-bit 8080\n- 8-bit 6800\n- 3/4-wire SPI\n
 Text Notes 12850 5450 0    50   ~ 0
-(Viref - Vss) / Iref\nIref = 15.625μA\n= 569k@8.9V
+(Viref - Vss) / Iref\nIref = 15.625μA\n= 515k@8.04V
 Text Notes 3600 9400 0    50   ~ 0
 Haptic Feedback
 Connection ~ 13050 3350
@@ -1488,15 +1466,6 @@ F 3 "~" H 1650 5200 50  0001 C CNN
 	1    1650 5200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2800 5500 2800 5550
-Wire Wire Line
-	2750 5100 2800 5100
-Wire Wire Line
-	2800 5200 2800 5100
-Connection ~ 2800 5100
-Wire Wire Line
-	2800 5100 2900 5100
 $Comp
 L power:GND #PWR0103
 U 1 1 5F2255E0
@@ -2128,4 +2097,17 @@ Wire Wire Line
 	6750 5300 6900 5300
 Text GLabel 1500 2100 0    39   Input ~ 0
 RN52_CMD_MODE
+Wire Wire Line
+	2750 5100 2900 5100
+$Comp
+L power:GND #PWR0109
+U 1 1 5F6C17CF
+P 2750 5200
+F 0 "#PWR0109" H 2750 4950 50  0001 C CNN
+F 1 "GND" H 2755 5027 50  0000 C CNN
+F 2 "" H 2750 5200 50  0001 C CNN
+F 3 "" H 2750 5200 50  0001 C CNN
+	1    2750 5200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
