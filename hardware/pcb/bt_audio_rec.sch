@@ -674,8 +674,8 @@ Text Notes 14550 5650 0    50   ~ 0
 256x64 4-bit Display\nSH1122\n- 8-bit 8080\n- 8-bit 6800\n- 3/4-wire SPI\n
 Text Notes 12850 5450 0    50   ~ 0
 (Viref - Vss) / Iref\nIref = 15.625μA\n= 515k@8.04V
-Text Notes 3600 9400 0    50   ~ 0
-Haptic Feedback
+Text Notes 3300 9450 0    50   ~ 0
+Haptic Feedback\n(motor requires flyback diode)
 Connection ~ 13050 3350
 Text GLabel 5600 2550 0    39   Input ~ 0
 GPIO_OUT_BTN_PWR_EN
