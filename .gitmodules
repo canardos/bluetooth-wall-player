@@ -1,0 +1,3 @@
+[submodule "hardware/pcb/kicad-mycustom-lib"]
+	path = hardware/pcb/kicad-mycustom-lib
+	url = https://github.com/canardos/kicad-mycustom-lib.git

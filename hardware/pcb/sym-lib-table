@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name ".MyCustom_General")(type "KiCad")(uri "${KIPRJMOD}/kicad-mycustom-lib/symbols/general.kicad_sym")(options "")(descr ""))
+  (lib (name "bt_audio_rec-rescue")(type "KiCad")(uri "${KIPRJMOD}/bt_audio_rec-rescue.kicad_sym")(options "")(descr ""))
+)
