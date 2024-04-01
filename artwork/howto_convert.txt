@@ -1,0 +1,5 @@
+To convert a portion of the SVG to a 4-bit bitmap source for use with Libpekin:
+
+1) Export PNG from inkscape
+2) magick cat.png -depth 4 gray:cat.dat
+3) xxd -i cat.dat > cat.h

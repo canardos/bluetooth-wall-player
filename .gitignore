@@ -1,3 +1,20 @@
+# PlatformIO
+
+.pioenvs/
+.pio/
+.pioenvs
+.piolibdeps
+.piobuild/
+travis.yml
+
+# Eclipse
+
+.settings/
+.project
+.cproject
+
+# Kicad
+
 *.kicad_prl
 *-bak
 *-backups
